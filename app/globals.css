@@ -1,0 +1,142 @@
+@import url("../styles/theme.css");
+
+html,
+body {
+  font-style: normal;
+  scroll-behavior: smooth;
+  font-family: var(--font-manrope);
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+  border-radius: 2px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 50px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Markdown Start */
+.markdown a {
+  color: #1da1f2;
+}
+
+.markdown a,
+code {
+  /* These are technically the same, but use both */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  -ms-word-break: break-all;
+  /* This is the dangerous one in WebKit, as it breaks things wherever */
+  word-break: break-all;
+  /* Instead use this non-standard one: */
+  word-break: break-word;
+
+  /* Adds a hyphen where the word breaks, if supported (No Blink) */
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+
+  padding: 2px;
+  color: #ff7000 !important;
+}
+
+.markdown pre {
+  display: grid;
+  width: 100%;
+}
+
+.markdown pre code {
+  width: 100%;
+  display: block;
+  overflow-x: auto;
+
+  color: inherit !important;
+}
+/* Markdown End */
+
+.hash-span {
+  margin-top: -140px;
+  padding-bottom: 140px;
+  display: block;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.dynamic-shadow-dom {
+  --dynamic-border-radius: 0px;
+  --dynamic-modal-width: 25rem;
+}
+.wallet-list-item__tile list-tile {
+  border-radius: 0px !important;
+}
+
+.tab-active {
+  border-radius: 16px;
+
+  /* box-shadow: 0px 2px 4px 0px #ffffff80 inset; */
+  color: white;
+
+  border: 1px solid;
+  background: linear-gradient(180deg, #253575 0%, #162561 100%);
+
+  border-image-source: linear-gradient(180deg, rgba(196, 203, 245, 0.5) 0%, rgba(196, 203, 245, 0) 100%);
+
+  box-shadow: 0px 2px 4px 0px rgba(255, 255, 255, 0.5) inset;
+}
+.sticky-box {
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+}
+
+.transform-box {
+  display: flex;
+  will-change: transform;
+}
+
+.btn-primary {
+  border: 3px solid rgba(25, 89, 173, 0.25);
+  background: rgba(221, 237, 102, 0.1);
+  box-shadow: 0px -3px 5px 0px rgba(255, 255, 255, 0.5) inset;
+  backdrop-filter: blur(3px);
+}
+
+.card-gradient {
+  border-radius: 811px;
+  background: rgba(25, 89, 173, 0.5);
+  filter: blur(200px);
+}
+.btn-gradient {
+  border-radius: 16px;
+  border: 2px solid #334679;
+  background: linear-gradient(180deg, #253575 0%, #162561 100%);
+  box-shadow: 0px -14px 48px 0px rgba(40, 51, 111, 0.69);
+}
+.tab-btn {
+  fill: linear-gradient(180deg, #253575 0%, #162561 100%);
+  stroke-width: 1px;
+  stroke: rgba(196, 203, 245, 0.5);
+  box-shadow: 0px 2px 4px 0px rgba(255, 255, 255, 0.5) inset;
+}
