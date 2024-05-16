@@ -22,14 +22,14 @@
     @apply focus-visible:ring-0 focus-visible:ring-transparent focus-visible:ring-offset-0 !important;
   }
   .xl-bold {
-    @apply text-6xl leading-[64px] lg:text-[80px] font-xlargebold lg:leading-[84px];
+    @apply text-5xl leading-[56px] md:text-[80px] font-xlargebold md:leading-[84px];
   }
 
   .heading-bold {
-    @apply text-3xl leading-10 lg:text-5xl font-bold lg:leading-[56px] font-kumbh;
+    @apply text-[2rem] leading-10 lg:text-5xl font-bold lg:!leading-[56px] font-kumbh;
   }
   .subtitle-semibold {
-    @apply text-2xl  lg:text-[40px] font-semibold lg:leading-[48px] font-manrope;
+    @apply text-[2rem] leading-[36px] lg:text-[2.5rem] font-semibold lg:leading-[48px] font-manrope;
   }
 
   .text-medium {

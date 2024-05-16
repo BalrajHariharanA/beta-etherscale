@@ -6,7 +6,7 @@ const BlogSection = () => {
     <div className="bg-blue-700-gradient">
       <div className="px-6 mx-auto my-16 max-w-7xl lg:px-8">
         <div className="flex flex-col items-center justify-center mt-16">
-          <h2 className="mb-10 text-white xl-bold !font-bold font-kumbh">Blogs</h2>
+          <h2 className="mb-10 text-white heading-bold font-kumbh">Blogs</h2>
           <p className="max-w-screen-md text-center text-medium text-skyblue-900">
             Our mission: to offer a secure, flexible, chain-agnostic, user-friendly platform for decentralised app
             development and deployment.
