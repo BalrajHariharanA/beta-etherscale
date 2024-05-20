@@ -19,13 +19,13 @@ const EcosystemOrbit = () => {
           <Image src={graph} alt="Graph" />
         </div>
         <div className="icon-bg-wp absolute bottom-[36px] left-[80px] animate-spiner-reverse">
-          <Image src={riscZero} />
+          <Image src={riscZero} alt="riscZero" />
         </div>
         <div className="icon-bg-wp absolute right-[100px] top-[20px] animate-spiner-reverse">
-          <Image src={polygon} alt="riscZero" />
+          <Image src={polygon} alt="polygon" />
         </div>
         <div className="icon-bg-wp absolute bottom-[70px] right-[48px] animate-spiner-reverse">
-          <Image src={blocksqout} />
+          <Image src={blocksqout} alt="blocksqout" />
         </div>
       </div>
       <div className="absolute outer-ring-2 flex items-center justify-center animate-spiner-reverse  rounded-full">
@@ -33,13 +33,13 @@ const EcosystemOrbit = () => {
           <Image src={op} alt="op" />
         </div>
         <div className="icon-bg-wp absolute top-[50%]  -right-[30px] animate-spiner">
-          <Image src={zkSync} />
+          <Image src={zkSync} alt="zkSync" />
         </div>
         <div className="icon-bg-wp absolute top-[30%] -left-[30px] animate-spiner">
-          <Image src={espresso} />
+          <Image src={espresso} alt="espresso" />
         </div>
         <div className="icon-bg-wp absolute bottom-[-30px] animate-spiner">
-          <Image src={eigenLayer} alt="espresso" />
+          <Image src={eigenLayer} alt="eigenLayer" />
         </div>
       </div>
       <div className="absolute outer-ring-1 flex items-center justify-center animate-spiner  rounded-full">
