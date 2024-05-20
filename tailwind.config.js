@@ -71,7 +71,7 @@ module.exports = {
         "tab-active": "url('/images/tab-active.png')",
         "light-gradient": "url('/svgs/light.svg')",
         skybluebgShade: "url('/ecosystem/skybluebgShade.svg')",
-        "hero-banner": "url('/images/hero-image.png')",
+        "hero-banner": "url('/images/hero.png')",
         "blue-800": "linear-gradient(180deg, #334679 0%, #162561 100%)",
         "blue-900": "linear-gradient(180deg, #253575 0%, #162561 100%)",
         "features-gradient":
@@ -84,7 +84,8 @@ module.exports = {
         850: ".85s",
       },
       backgroundPosition: {
-        "right-top-4": "right top -5.5rem",
+        "right-top": "right 6rem top -1.6rem",
+        "right-top-20-2.6": "right -20rem top -1.6rem",
       },
       screens: {
         xs: "420px",

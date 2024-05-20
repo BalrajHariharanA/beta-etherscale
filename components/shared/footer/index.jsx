@@ -3,33 +3,34 @@ import React from "react";
 import TwitterIcon from "@/public/svgs/twitter.svg";
 import DiscordIcon from "@/public/svgs/discord.svg";
 import Image from "next/image";
+import Link from "next/link";
 const socialLinks = [
   {
     name: "X",
-    href: "#",
+    href: "https://x.com/Etherscaleapps",
     icon: TwitterIcon,
   },
 
   {
     name: "Discord",
-    href: "#",
+    href: "https://discord.com/invite/ACZs8WrP",
     icon: DiscordIcon,
   },
 ];
 const acceptanceLinks = [
-  {
-    name: "Privacy policy",
-    href: "#",
-  },
+  // {
+  //   name: "Privacy policy",
+  //   href: "#",
+  // },
 
-  {
-    name: "Terms od Service",
-    href: "#",
-  },
-  {
-    name: "FAQs",
-    href: "#",
-  },
+  // {
+  //   name: "Terms od Service",
+  //   href: "#",
+  // },
+  // {
+  //   name: "FAQs",
+  //   href: "#",
+  // },
 ];
 export default function Footer() {
   return (
@@ -37,10 +38,10 @@ export default function Footer() {
       <div className="px-6 py-12 mx-auto max-w-7xl lg:flex lg:items-center lg:justify-between lg:px-8 lg:space-x-12">
         <div className="flex justify-center space-x-6 lg:order-3">
           {socialLinks.map((item) => (
-            <a key={item.name} href={item.href} className="text-gray-400 hover:text-gray-500">
+            <Link key={item.name} target="_blank" href={item.href} className="text-gray-400 hover:text-gray-500">
               <span className="sr-only">{item.name}</span>
               <Image src={item.icon} alt={item.name} />
-            </a>
+            </Link>
           ))}
         </div>
 
@@ -64,7 +65,7 @@ export default function Footer() {
         </nav>
         <div className="mt-8 lg:order-1 lg:mt-0">
           <p className="text-sm font-medium text-center font-manrope text-skyblue-700">
-            &copy; Copyright EtherScale, 2024..
+            &copy; Copyright EtherScale, 2024.
           </p>
         </div>
       </div>

@@ -24,7 +24,7 @@ const StepCard = ({ activeSlide }) => {
           );
         })}
       </div>
-      <div className="relative w-screen p-5 m-auto">
+      <div className="relative max-w-[1136px] w-screen p-5 m-auto">
         {etherScaleFeatures.map((step, stepIdx) => {
           const activeCard = stepIdx === activeSlide;
 
