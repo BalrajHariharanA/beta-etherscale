@@ -6,7 +6,7 @@ const AppLayout = ({ children }) => {
   return (
     <main className="relative flex flex-col min-h-screen">
       <Navbar />
-      <div className="flex ">
+      <div className="flex">
         <section className="flex flex-col flex-1">{children}</section>
       </div>
       <div className="mt-auto">

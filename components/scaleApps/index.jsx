@@ -53,28 +53,44 @@ const ScaleApps = () => {
               Make ScaleApps life easier{" "}
             </h2>
             <p className="mt-6 text-center text-medium text-skyblue-90">
-              Our mission: to offer a secure, flexible, chain-agnostic,
-              user-friendly platform for decentralised app development and
-              deployment.
+            Explore EtherScale’s additional features that support the deployment, operation, and management of ScaleApps, enhancing overall functionality and user experience.
             </p>
           </div>
           <div ref={horizontal} className="horizontal">
             <section role="feed" className="scrolling-cards-wp mt-20 container">
               {scaleAppsFeatures.map((feature) => (
+                <div key={feature[0].name}>
                 <div
-                  key={feature.name}
-                  className="flex  scrolling-card flex-col gap-5 w-[365px] sm:w-[450px] flex-grow-0 flex-shrink-0  p-10 transition-all duration-500"
+                  className="flex flex-col gap-5 w-[365px] sm:w-[450px] flex-grow-0 flex-shrink-0  p-10 transition-all duration-500"
                 >
                   <dt className="text-2xl font-bold leading-7 text-white ">
-                    <div className="flex items-start justify-start mb-6 rounded-lg b">
-                      <Image src={feature.icon} alt={feature.name} />
+                    <div className="flex items-center justify-center mb-6 rounded-full border-2 border-borderBlue w-[88px] h-[88px]">
+                      <div className="flex items-center justify-center rounded-full bg-skyblue-800 w-[74px] h-[74px]">
+                        <Image src={feature[0].icon} alt={feature[0].name}  width={44} height={44}/>
+                      </div>
                     </div>
-                    {feature.name}
+                    {feature[0].name}
                   </dt>
-                  <dd className="flex flex-col flex-auto mt-1 text-base leading-7 text-skyblue-900">
-                    <p className="flex-auto">{feature.description}</p>
+                  <dd className="flex flex-col flex-auto mt-1 text-sm leading-7 text-skyblue-900">
+                    <p className="flex-auto">{feature[0].description}</p>
                   </dd>
                 </div>
+                <div
+                  className="flex flex-col gap-5 w-[365px] sm:w-[450px] flex-grow-0 flex-shrink-0  p-10 transition-all duration-500"
+                >
+                  <dt className="text-2xl font-bold leading-7 text-white ">
+                    <div className="flex items-center justify-center mb-6 rounded-full border-2 border-borderBlue w-[88px] h-[88px]">
+                      <div className="flex items-center justify-center rounded-full bg-skyblue-800 w-[74px] h-[74px]">
+                        <Image src={feature[1].icon} alt={feature[1].name}  width={44} height={44}/>
+                      </div>
+                    </div>
+                    {feature[1].name}
+                  </dt>
+                  <dd className="flex flex-col flex-auto mt-1 text-sm leading-7 text-skyblue-900">
+                    <p className="flex-auto">{feature[1].description}</p>
+                  </dd>
+                </div>
+              </div>
               ))}
             </section>
           </div>
