@@ -5,7 +5,7 @@ import etherScaleFeatures from "@/constants/features";
 
 const StepCard = ({ activeSlide }) => {
   return (
-    <div className="pt-8 ">
+    <div className="pt-8">
       <div className="whitespace-nowrap md:flex items-center self-center flex-nowrap overflow-x-auto w-[365px] sm:w-screen m-auto  justify-center  max-w-[744px] p-4 bg-blue-500 border-skyblue-250 border-[3px] rounded-3xl ">
         {etherScaleFeatures.map((step, stepIdx) => {
           const activeCard = stepIdx === activeSlide;

@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 
 const TabContent = ({ item, activeSlide }) => {
   return (
-    <div className="flex items-center justify-center w-full p-8 lg:absolute lg:right-0 max-">
+    <div className="flex items-center justify-center w-full lg:p-8 max-lg:pb-6 lg:absolute lg:right-0 max-">
       <div
         className={cn(
           activeSlide ? "opacity-100 duration-300" : "opacity-0 duration-300 ",
@@ -14,7 +14,7 @@ const TabContent = ({ item, activeSlide }) => {
       >
         <div className="relative flex items-center gap-6 max-md:flex-col-reverse">
           <div className="absolute w-[70vw] h-[70vh] translate-x-[12%] -translate-y-[50%] card-gradient top-0  " />
-          <div className="flex flex-col flex-1 gap-7 pl-[50px]">
+          <div className="flex flex-col flex-1 gap-7 lg:pl-[50px]">
             <h3 className={cn("text-white transition-all duration-300 subtitle-semibold")}>{item.name}</h3>
             <p className="transition-all duration-300 text-medium text-skyblue-750 ">{item.description}</p>
           </div>
