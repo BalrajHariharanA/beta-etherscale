@@ -1,7 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ["class"],
-  content: ["./pages/**/*.{js,jsx}", "./components/**/*.{js,jsx}", "./app/**/*.{js,jsx}", "./src/**/*.{js,jsx}"],
+  content: [
+    "./pages/**/*.{js,jsx}",
+    "./components/**/*.{js,jsx}",
+    "./app/**/*.{js,jsx}",
+    "./src/**/*.{js,jsx}",
+  ],
   theme: {
     container: {
       center: true,
@@ -65,11 +70,14 @@ module.exports = {
       backgroundImage: {
         "tab-active": "url('/images/tab-active.png')",
         "light-gradient": "url('/svgs/light.svg')",
+        skybluebgShade: "url('/ecosystem/skybluebgShade.svg')",
         "hero-banner": "url('/images/hero.png')",
         "blue-800": "linear-gradient(180deg, #334679 0%, #162561 100%)",
         "blue-900": "linear-gradient(180deg, #253575 0%, #162561 100%)",
-        "features-gradient": "linear-gradient(180deg, #1B275A 0%, #0E1434 100%)",
-        "blue-700-gradient": "linear-gradient(180deg, rgba(27, 39, 90, 0.9) 0%, rgba(14, 20, 52, 0.9) 100%)",
+        "features-gradient":
+          "linear-gradient(180deg, #1B275A 0%, #0E1434 100%)",
+        "blue-700-gradient":
+          "linear-gradient(180deg, rgba(27, 39, 90, 0.9) 0%, rgba(14, 20, 52, 0.9) 100%)",
       },
 
       transitionDuration: {
@@ -105,6 +113,10 @@ module.exports = {
             opacity: 0,
           },
         },
+        spiner: {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(1turn)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -112,6 +124,8 @@ module.exports = {
         scale: "scale 1s ease-out",
         fadeIn: "fadeIn 1s ease-out forwards",
         fadeOut: "fadeOut 1s ease-out forwards",
+        spiner: "spiner  20s linear infinite",
+        "spiner-reverse": "spiner  20s linear infinite reverse",
       },
     },
   },
