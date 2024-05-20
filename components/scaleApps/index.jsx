@@ -1,9 +1,6 @@
 "use client";
 import scaleAppsFeatures from "@/constants/scaleAppsFeatures";
-import {
-  useWindowWidth,
-  useWindowSize,
-} from "@react-hook/window-size/throttled";
+import useViewport from '@/hooks/useViewport';
 import Image from "next/image";
 import React, { useEffect, useRef } from "react";
 
@@ -11,8 +8,9 @@ const ScaleApps = () => {
   const spaceHolder = useRef(null);
   const horizontal = useRef(null);
   const stickyEle = useRef(null);
-  const [width, height] = useWindowSize({ fps: 0 });
+  const {width, height} = useViewport();
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   function calcDynamicHeight() {
     const objectWidth = horizontal.current.scrollWidth;
     return objectWidth - width + height + 10; // 150 is the padding (in pixels) desired on the right side of the .cards container. This can be set to whatever your styles dictate
@@ -42,7 +40,7 @@ const ScaleApps = () => {
       window.removeEventListener("scroll", handleScroll);
       window.removeEventListener("resize", handleResize);
     };
-  }, []);
+  }, [calcDynamicHeight]);
 
   return (
     <section className=" w-screen">
