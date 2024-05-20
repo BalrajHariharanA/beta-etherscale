@@ -3,6 +3,7 @@ import React from "react";
 import TabContent from "./TabContent";
 import etherScaleFeatures from "@/constants/features";
 
+
 const StepCard = ({ activeSlide }) => {
   return (
     <div className="pt-8">

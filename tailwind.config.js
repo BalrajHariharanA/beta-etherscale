@@ -33,6 +33,8 @@ module.exports = {
       },
       colors: {
         borderBlue: "rgba(51, 70, 121, 1)",
+        lightBlue: "#EAEDFF",
+        highlightBlue:"rgba(196, 203, 245, 0.75)",
         neonGreen: {
           100: "rgba(221, 237, 102, 0.1)",
           900: "#DDED66",
