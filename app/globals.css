@@ -105,7 +105,11 @@ code {
   border: 1px solid;
   background: linear-gradient(180deg, #253575 0%, #162561 100%);
 
-  border-image-source: linear-gradient(180deg, rgba(196, 203, 245, 0.5) 0%, rgba(196, 203, 245, 0) 100%);
+  border-image-source: linear-gradient(
+    180deg,
+    rgba(196, 203, 245, 0.5) 0%,
+    rgba(196, 203, 245, 0) 100%
+  );
 
   box-shadow: 0px 2px 4px 0px rgba(255, 255, 255, 0.5) inset;
 }
@@ -148,7 +152,6 @@ code {
   box-shadow: 0px 2px 4px 0px rgba(255, 255, 255, 0.5) inset;
 }
 
-
 .space-holder {
   position: relative;
   width: 100%;
@@ -181,4 +184,62 @@ code {
   flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: center;
+}
+
+.icon-bg-wp {
+  display: flex;
+  width: 72px;
+  height: 72px;
+  padding: 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 17.278px;
+  flex-shrink: 0;
+  border-radius: 65.657px;
+  border: 1.728px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.02);
+  box-shadow: 0px 0px 20.734px 0px rgba(255, 255, 255, 0.08) inset;
+  backdrop-filter: blur(41.467742919921875px);
+}
+
+.orbit-wp {
+  max-width: 650px;
+  height: 650px;
+}
+.outer-ring-3 {
+  width: 620px;
+  height: 620px;
+  flex-shrink: 0;
+  border-radius: 620px;
+  border: 0.864px solid rgba(255, 255, 255, 0.1);
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(255, 255, 255, 0) 87.85%,
+    rgba(255, 255, 255, 0.02) 100%
+  );
+}
+.outer-ring-2 {
+  width: 450px;
+  height: 450px;
+  flex-shrink: 0;
+  border-radius: 450px;
+  border: 0.864px solid rgba(255, 255, 255, 0.1);
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(255, 255, 255, 0) 83.29%,
+    rgba(255, 255, 255, 0.02) 100%
+  );
+}
+
+.outer-ring-1 {
+  width: 280px;
+  height: 280px;
+  flex-shrink: 0;
+  border-radius: 280px;
+  border: 0.864px solid rgba(255, 255, 255, 0.1);
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(255, 255, 255, 0) 46.57%,
+    rgba(255, 255, 255, 0.02) 100%
+  );
 }
