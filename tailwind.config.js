@@ -88,6 +88,7 @@ module.exports = {
       backgroundPosition: {
         "right-top": "right 6rem top -1.6rem",
         "right-top-20-2.6": "right -20rem top -1.6rem",
+        'bottom-4': 'top left',
       },
       screens: {
         xs: "420px",

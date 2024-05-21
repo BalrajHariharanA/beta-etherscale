@@ -2,6 +2,8 @@
 import React from "react";
 import TwitterIcon from "@/public/svgs/twitter.svg";
 import DiscordIcon from "@/public/svgs/discord.svg";
+import TelegramIcon from "@/public/svgs/telegram.svg";
+import MediumIcon from "@/public/svgs/medium.svg"
 import Image from "next/image";
 import Link from "next/link";
 const socialLinks = [
@@ -10,11 +12,20 @@ const socialLinks = [
     href: "https://x.com/Etherscaleapps",
     icon: TwitterIcon,
   },
-
   {
     name: "Discord",
     href: "https://discord.com/invite/ACZs8WrP",
     icon: DiscordIcon,
+  },
+  {
+    name: "Telegram",
+    href: "https://t.me/etherscaleapps",
+    icon: TelegramIcon,
+  },
+  {
+    name: "Medium",
+    href: "https://blog.etherscale.xyz/",
+    icon: MediumIcon,
   },
 ];
 const acceptanceLinks = [

@@ -57,7 +57,7 @@ const ScaleApps = () => {
           <div ref={horizontal} className="horizontal">
             <section role="feed" className="scrolling-cards-wp mt-20 container">
               {scaleAppsFeatures.map((feature) => (
-                <div key={feature[0].name}>
+                <div key={feature[0].name} className="max-md:flex">
                 <div
                   className="flex flex-col gap-5 w-[365px] sm:w-[450px] flex-grow-0 flex-shrink-0  p-10 transition-all duration-500"
                 >
