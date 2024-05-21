@@ -1,7 +1,7 @@
 import { Manrope, Kumbh_Sans } from "next/font/google";
 import "./globals.css";
 import AppLayout from "./AppLayout";
-import GoogleAnalytics from '@/components/GoogleAnalytics';
+import GoogleAnalytics from '@/components/shared/GoogleAnalytics';
 
 const manrope = Manrope({
   weight: ["200", "300", "400", "500", "600", "700", "800"],
