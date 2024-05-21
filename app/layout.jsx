@@ -1,6 +1,7 @@
 import { Manrope, Kumbh_Sans } from "next/font/google";
 import "./globals.css";
 import AppLayout from "./AppLayout";
+import GoogleAnalytics from '@/components/GoogleAnalytics';
 
 const manrope = Manrope({
   weight: ["200", "300", "400", "500", "600", "700", "800"],
@@ -21,6 +22,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <GoogleAnalytics />
       <body className={`${manrope.variable} ${kumbh_Sans.variable} bg-blue-950 text-skyblue-900 `}>
         <AppLayout>{children}</AppLayout>
       </body>
