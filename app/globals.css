@@ -243,3 +243,7 @@ code {
     rgba(255, 255, 255, 0.02) 100%
   );
 }
+
+.feature-card:last-child > .image-bar {
+  display: none;
+}
